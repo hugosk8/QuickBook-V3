@@ -39,6 +39,10 @@
             @yield('content')
         </main>
 
+        <footer>
+            <p>QuickBook - 3W Academy - Hugo SAUVAGE</p>
+        </footer>
+
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </body>
 </html>
