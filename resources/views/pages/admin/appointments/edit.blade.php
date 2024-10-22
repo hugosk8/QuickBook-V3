@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Modifier l\'utilisateur')
+@section('title', 'Modifier le rendez vous')
 
 @section('content')
 <div class="container">

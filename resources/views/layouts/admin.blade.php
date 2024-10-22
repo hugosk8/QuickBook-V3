@@ -23,7 +23,7 @@
         <header>
             <div>
                 <a href="/">
-                    <x-application-logo />
+                    <img src="{{ asset('images/quickbook-logo.jpg') }}" alt="Logo QuickBook">
                 </a>
             </div>
             @include('layouts.navigations.admin_navigation')

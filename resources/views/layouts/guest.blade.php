@@ -23,7 +23,7 @@
         <header>
             <div>
                 <a href="/">
-                    <x-application-logo />
+                    <img src="{{ asset('images/quickbook-logo.jpg') }}" alt="Logo QuickBook">
                 </a>
             </div>
             @include('layouts.navigations.guest_navigation')
@@ -39,5 +39,6 @@
             @yield('content')
         </main>
 
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </body>
 </html>

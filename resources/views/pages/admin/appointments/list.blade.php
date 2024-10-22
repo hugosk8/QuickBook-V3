@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Liste des utilisateurs')
+@section('title', 'Liste des rendez-vous')
 
 @section('content')
 <div class="container">

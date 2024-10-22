@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Dashboard')
+@section('title', 'tableau de bord')
 
 @section('content')
 <div class="container">
@@ -14,11 +14,10 @@
         </div>
     @endif
     
-    <h1>Dashboard</h1>
+    <h1>Tableau de bord</h1>
     <p>Vous êtes connecté !</p>
     <ul>
         <li>Nom : {{ $user->name}}</li>
-        <li>Role : {{ $user->role}}</li>
         <li>Email : {{ $user->email }}</li>
     </ul>
 
@@ -31,7 +30,9 @@
             @else
                 @foreach ($appointments as $appointment)
                     <div class="card">
-                        <h3>{{ $appointment->service->name }}</h3>
+                        <a href="{{ route('appointment_details', ['id' => $appointment->id]) }}">
+                            <h3>{{ $appointment->service->name }}</h3>
+                        </a>
                         <span>Date : {{ $appointment->date->format('d/m//Y') }}</span>
                         <button type="button" class="btn-delete" onclick="confirmDelete({{$appointment->id}})">Annuler</button>
                     </div>

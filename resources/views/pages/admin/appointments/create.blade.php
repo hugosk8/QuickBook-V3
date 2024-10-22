@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Ajouter un service')
+@section('title', 'Ajouter un rendez-vous')
 
 @section('content')
 <div class="container">
@@ -41,6 +41,11 @@
             <div class="form-group">
                 <label for="date">Date :</label>
                 <input type="date" name="date" id="date">
+            </div>
+
+            <div class="form-group">
+                <label for="">Nombre de participants :</label>
+                <input type="number" min="1" max="5">
             </div>
             
             <div class="form-group">

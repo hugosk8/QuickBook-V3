@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Dashboard')
+@section('title', 'Tableau de bord')
 
 @section('content')
 <div class="container">
@@ -14,7 +14,7 @@
         </div>
     @endif
 
-    <h1>Admin Dashboard</h1>
+    <h1>Tableau de board Administrateur</h1>
     <p>Vous êtes connecté en tant qu'admin !</p>
     <ul>
         <li>Nom : {{ $user->name}}</li>

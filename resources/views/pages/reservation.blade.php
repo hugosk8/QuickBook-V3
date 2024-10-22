@@ -27,6 +27,9 @@
                     <option value="{{ $service->id }}">{{ $service->name }} ({{ $service->duration }} heures)</option>
                 @endforeach
             </select>
+
+            <label for="">Nombre de participants :</label>
+            <input type="number" min="1" max="5">
         </div>
 
         <!-- Sélection de la date -->

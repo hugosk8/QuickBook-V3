@@ -1,6 +1,6 @@
 @extends('layouts.guest')
 
-@section('title', 'Login')
+@section('title', 'Créer un compte')
 
 @section('content')
 <div class="container">

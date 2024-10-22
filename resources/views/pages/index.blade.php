@@ -19,7 +19,7 @@
     
     <div class="infos first">
         <div class="img-container">
-            <img src="{{ asset('images/home/occitanie.webp') }}" alt="">
+            <img src="{{ asset('images/home/occitanie.webp') }}" alt="Côte de Banyuls-sur-Mer">
         </div>
         <div class="text-container">
             <h3>Découvrez l'Occitanie autrement</h3>
@@ -33,7 +33,7 @@
             <p>Nous proposons des prestations adaptées à vos envies : des circuits guidés en petits groupes, des visites privées ou encore des aventures en plein air. Laissez-vous séduire par la richesse de l'Occitanie, de ses vignobles à ses montagnes, en passant par ses plages et ses villages pittoresques. Nos services sont conçus pour vous garantir des moments inoubliables, que ce soit pour une journée de détente ou une aventure sportive.</p>
         </div>
         <div class="img-container">
-            <img src="{{ asset('images/home/occitanie2.webp') }}" alt="">
+            <img src="{{ asset('images/home/occitanie2.webp') }}" alt="Grottes de Gargas">
         </div>
     </div>
 </section>
@@ -46,13 +46,13 @@
 
 <section class="carousel">
     <div class="slick-carousel">
-        <div><img src="{{ asset('images/home/carousel1.webp') }}" alt=""></div>
-        <div><img src="{{ asset('images/home/carousel2.webp') }}" alt=""></div>
-        <div><img src="{{ asset('images/home/carousel3.webp') }}" alt=""></div>
-        <div><img src="{{ asset('images/home/carousel4.webp') }}" alt=""></div>
-        <div><img src="{{ asset('images/home/carousel5.webp') }}" alt=""></div>
-        <div><img src="{{ asset('images/home/carousel6.webp') }}" alt=""></div>
-        <div><img src="{{ asset('images/home/carousel7.webp') }}" alt=""></div>
+        <div><img src="{{ asset('images/home/carousel1.webp') }}" alt="Clocher au milieu des champs"></div>
+        <div><img src="{{ asset('images/home/carousel2.webp') }}" alt="Mer turquoise vue des rochers"></div>
+        <div><img src="{{ asset('images/home/carousel3.webp') }}" alt="Mer vue du haut d'une falaise"></div>
+        <div><img src="{{ asset('images/home/carousel4.webp') }}" alt="Les Gorges vvu du haut d'une colline"></div>
+        <div><img src="{{ asset('images/home/carousel5.webp') }}" alt="Falaise au milieu d'une foret"></div>
+        <div><img src="{{ asset('images/home/carousel6.webp') }}" alt="Ville au sommet d'une montagne"></div>
+        <div><img src="{{ asset('images/home/carousel7.webp') }}" alt="Sommet des Cévennes"></div>
     </div>
 </section>
 @endsection

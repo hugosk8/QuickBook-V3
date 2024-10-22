@@ -14,4 +14,9 @@ class CustomerController extends Controller
         $appointments = $user->appointments;
         return view('pages/customer/dashboard', compact('user', 'appointments'));
     }
+
+    public function appointment_details(string $id) {
+        $appointment = Appointment::findOrFail($id);
+        return view('pages/customer/appointment_details', compact('appointment'));
+    }
 }

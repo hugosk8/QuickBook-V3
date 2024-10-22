@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Informations de l\'utilisateur')
+@section('title', 'Informations de la prestation')
 
 @section('content')
     @if ($errors->any())

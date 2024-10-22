@@ -70,7 +70,7 @@
 <script>
     function confirmDelete(userId) {
         const deleteForm = document.getElementById('deleteForm');
-        deleteForm.action = `users/${userId}`;
+        deleteForm.action = `${userId}`;
 
         document.getElementById('deleteModal').style.display = 'block';
     }

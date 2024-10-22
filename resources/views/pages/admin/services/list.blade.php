@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Liste des utilisateurs')
+@section('title', 'Liste des services')
 
 @section('content')
 <div class="container">
@@ -42,7 +42,7 @@
                             {{ $service->name }}
                         </a>
                     </td>
-                    <td>{{ $service->price }} €</td>
+                    <td class="price">{{ $service->price }} €</td>
                     <td>{{ $service->duration }}h</td>
                     <td>{{ $service->description }}</td>
                     <td class="action-buttons">
@@ -73,7 +73,7 @@
 <script>
     function confirmDelete($serviceId) {
         const deleteForm = document.getElementById('deleteForm');
-        deleteForm.action = `services/${$serviceId}`;
+        deleteForm.action = `${$serviceId}`;
 
         document.getElementById('deleteModal').style.display = 'block';
     }
