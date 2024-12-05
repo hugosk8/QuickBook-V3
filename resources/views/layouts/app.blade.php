@@ -22,8 +22,8 @@
 
         <header>
             <div>
-                <a href="/">
-                    <img src="{{ asset('images/quickbook-logo.jpg') }}" alt="Logo QuickBook">
+                <a href="/" aria-label="logo du site QuickBook">
+                    <img src="{{ asset('images/quickbook-logo.webp') }}" alt="Logo QuickBook">
                 </a>
             </div>
             @include('layouts.navigations.app_navigation')

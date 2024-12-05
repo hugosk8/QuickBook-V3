@@ -22,17 +22,11 @@
 
         <header>
             <div>
-                <a href="/">
-                    <img src="{{ asset('images/quickbook-logo.jpg') }}" alt="Logo QuickBook">
+                <a href="/" aria-label="logo du site QuickBook">
+                    <img src="{{ asset('images/quickbook-logo.webp') }}" alt="Logo QuickBook">
                 </a>
             </div>
             @include('layouts.navigations.guest_navigation')
-            {{-- <nav>
-                <ul>
-                    <li><a href="{{ route('users.index') }}">Liste</a></li>
-                    <li><a href="{{ route('users.create') }}">Ajouter</a></li>
-                </ul>
-            </nav> --}}
         </header>
 
         <main>

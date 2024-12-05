@@ -11,22 +11,34 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Cormorant Garamond -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
         {{-- flatpicker --}}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         
         <!-- Scripts -->
-        @vite(['resources/css/common.css', 'resources/js/app.js', 'resources/js/slick-carousel.js', 'resources/js/burger-menu.js'])
+        @vite(['resources/css/common.css', 'resources/js/app.js', 'resources/js/slick-carousel.js', 'resources/js/burger-menu.js', 'resources/js/dark-mode.js'])
     </head>
     <body>
 
         <header>
             <div>
-                <a href="/">
-                    <img src="{{ asset('images/quickbook-logo.jpg') }}" alt="Logo QuickBook">
+                <a href="/" aria-label="logo du site QuickBook">
+                    <img src="{{ asset('images/quickbook-logo.webp') }}" alt="Logo QuickBook">
                 </a>
             </div>
             @include('layouts.navigations.admin_navigation')
+            <button id="dark-mode">Dark Mode</button>
         </header>
 
         <main>

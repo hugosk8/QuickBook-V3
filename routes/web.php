@@ -18,7 +18,7 @@ Route::group([], function () {
 
 // For connected users
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/tableau-de-bord', [CustomerController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [CustomerController::class, 'index'])->name('dashboard');
     Route::get('/reservation', [GuestController::class, 'reservation'])->name('reservation');
     Route::get('/reserved-slots', [AppointmentController::class, 'getReservedSlots']);
     Route::get('/appointment_details/{id}', [CustomerController::class, 'appointment_details'])->name('appointment_details');

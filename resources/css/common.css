@@ -1,11 +1,83 @@
+/* Garamond Font */
+.cormorant-garamond-light {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.cormorant-garamond-medium {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.cormorant-garamond-semibold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.cormorant-garamond-bold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.cormorant-garamond-light-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+  
+.cormorant-garamond-regular-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.cormorant-garamond-medium-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+  
+.cormorant-garamond-semibold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+  
+.cormorant-garamond-bold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Montserrat Font */
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+  
 :root {
-    --main-color: #425d3d;
-    --secondary-color: #648e77;
+    --main-color: #314529;
+    --secondary-color: #4F725E;
 }
 
 body, html {
     margin: 0;
     padding: 0;
+}
+
+main {
+    min-height: calc(100vh - 100px);
 }
 
 ul {
@@ -34,8 +106,24 @@ button {
     border-radius: 6px;
 }
 
+p, ul {
+    font-family: 'Montserrat';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond';
+}
+
 .btn:hover {
     background-color: #6553de;
+}
+
+.dark-mode {
+    background-color: #222222;
+    color: white;
+}
+.dark-mode-title {
+    color: var(--secondary-color) !important;
 }
 
 /* Header */
@@ -159,7 +247,7 @@ header nav ul li a:hover, header nav ul li:hover {
 /* Form */
 .form-container {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 0px auto;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -257,7 +345,6 @@ section.head {
     justify-content: end;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 80px;
 }
 
 section.head h1 {
@@ -295,6 +382,7 @@ section.presentation {
     padding: 0 5%;
     max-width: 1400px;
     margin: auto;
+    padding: 80px 0
 }
 
 section.presentation .title {
@@ -349,7 +437,6 @@ section.services {
     background-color: var(--secondary-color);
     color: white;
     height: 200px;
-    margin: 80px 0;
 }
 
 section.services h2 {
@@ -362,7 +449,7 @@ section.services h2:hover {
 }
 
 section.carousel {
-    margin: 80px 0;
+    padding: 80px 0;
 }
 
 .carousel {

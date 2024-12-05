@@ -18,7 +18,7 @@ class UserController extends Controller
                 'name' => 'required|string|max:100',
                 'email' => 'required|email|unique:users',
                 'password' => 'required|string|min:8|confirmed',
-                'role' => 'required|in:customer,employee,admin'
+                'role' => 'required|in:customer,employee,admin',
             ]);
 
             User::create([
