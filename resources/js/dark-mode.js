@@ -1,16 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const button = document.getElementById("dark-mode");
-    
-    button.addEventListener("click", () => {
-        const presentation_section = document.querySelectorAll('section.switch');
-        const presentation_title = document.querySelectorAll('h2.switch, h3.switch');
-        
-        Array.from(presentation_section).forEach(element => {
-            element.classList.toggle('dark-mode');
-        })
-        
-        Array.from(presentation_title).forEach(element => {
-            element.classList.toggle('dark-mode-title');
-        })
-    })
-})
+    const toggleInput = document.getElementById("dark-mode-toggle");
+    const body = document.querySelector('body');
+    const elementsToToggle = [
+        body, 
+        document.querySelector('table'), 
+        document.querySelector('.form-container'),
+        document.querySelector('section.presentation')
+    ];
+
+    const savedMode = localStorage.getItem('theme');
+    if (savedMode) {
+        elementsToToggle.forEach(el => el?.classList.add(savedMode));
+        toggleInput.checked = savedMode === 'dark-mode';
+    }
+
+    toggleInput.addEventListener("change", () => {
+        const isDarkMode = toggleInput.checked;
+
+        elementsToToggle.forEach(el => {
+            if (el) {
+                el.classList.toggle('dark-mode', isDarkMode);
+            }
+        });
+
+        const newMode = isDarkMode ? 'dark-mode' : '';
+        localStorage.setItem('theme', newMode);
+    });
+});

@@ -119,11 +119,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dark-mode {
-    background-color: #222222;
+    background-color: rgb(51, 55, 65);
     color: white;
 }
 .dark-mode-title {
     color: var(--secondary-color) !important;
+}
+
+table.dark-mode tr:nth-child(odd) {
+    background-color: rgb(120, 121, 127);
+}
+
+table.dark-mode tr:nth-child(even) {
+    background-color: rgb(89, 90, 96);
+}
+
+table.dark-mode thead tr {
+    background-color: inherit !important;
+}
+
+.form-container.dark-mode {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: rgb(22, 27, 37);
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container.dark-mode h1, .form-container.dark-mode label {
+    color: white !important;
 }
 
 /* Header */
@@ -252,6 +277,10 @@ header nav ul li a:hover, header nav ul li:hover {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1, .form-container label {
+    color: black;
 }
 
 .form-group {
@@ -394,6 +423,10 @@ section.presentation h2 {
     color: var(--main-color);
 }
 
+section.presentation.dark-mode h2 {
+    color: #68b589;
+}
+
 section.presentation .infos {
     display: flex;
     flex-direction: row;
@@ -406,7 +439,8 @@ section.presentation .infos div {
 
 section.presentation .infos .img-container {
     display: flex;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 section.presentation .infos .img-container img {
@@ -428,6 +462,10 @@ section.presentation .infos .text-container p {
 
 section.presentation .infos .text-container h3 {
     color: var(--main-color);
+}
+
+section.presentation.dark-mode .infos .text-container h3 {
+    color: #68b589;
 }
 
 section.services {
@@ -554,10 +592,6 @@ thead {
 thead tr td {
     padding: 10px;
     font-weight: bold;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
 }
 
 tbody tr td {
@@ -786,3 +820,49 @@ footer {
         text-align: center;
     }
 }
+
+/* Conteneur du toggle */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Bouton toggle */
+.toggle {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.toggle::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox activée */
+input[type="checkbox"]:checked + .toggle {
+    background: #4caf50;
+}
+
+input[type="checkbox"]:checked + .toggle::before {
+    transform: translateX(25px);
+}
+
+input#dark-mode-toggle {
+    display: none;
+}
+

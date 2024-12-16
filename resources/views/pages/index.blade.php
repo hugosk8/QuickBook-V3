@@ -11,9 +11,9 @@
     </div> --}}
 </section>
 
-<section class="presentation switch">
+<section class="presentation">
     <div class="title" aria-label="titre de la page">
-        <h2 class="switch">Explorez plus, vivez mieux</h2>
+        <h2>Explorez plus, vivez mieux</h2>
         <p>Vivez des aventures exceptionnelles et redécouvrez l'Occitanie</p>
     </div>
     
@@ -22,14 +22,14 @@
             <img src="{{ asset('images/home/occitanie.webp') }}" alt="Côte de Banyuls-sur-Mer">
         </div>
         <div class="text-container">
-            <h3 class="dark-mode-title">Découvrez l'Occitanie autrement</h3>
+            <h3>Découvrez l'Occitanie autrement</h3>
             <p>Notre agence vous propose des excursions uniques à travers les plus beaux sites naturels et culturels de la région. Que vous soyez amateurs de randonnées en montagne, de balades en bord de mer ou de découvertes culturelles, nous avons une expérience qui vous correspond. Chaque visite est conçue pour vous offrir une immersion totale, avec des guides passionnés et un cadre naturel exceptionnel.</p>
         </div>
     </div>
 
     <div class="infos" aria-label="informations sur l'agence">
         <div class="text-container">
-            <h3 class="switch">Des excursions sur mesure</h3>
+            <h3>Des excursions sur mesure</h3>
             <p>Nous proposons des prestations adaptées à vos envies : des circuits guidés en petits groupes, des visites privées ou encore des aventures en plein air. Laissez-vous séduire par la richesse de l'Occitanie, de ses vignobles à ses montagnes, en passant par ses plages et ses villages pittoresques. Nos services sont conçus pour vous garantir des moments inoubliables, que ce soit pour une journée de détente ou une aventure sportive.</p>
         </div>
         <div class="img-container">
@@ -44,7 +44,7 @@
     </a>
 </section>
 
-<section class="carousel switch" aria-label="Caroussel d'images des excursions">
+<section class="carousel" aria-label="Caroussel d'images des excursions">
     <div class="slick-carousel">
         <div><img src="{{ asset('images/home/carousel1.webp') }}" alt="Clocher au milieu des champs"></div>
         <div><img src="{{ asset('images/home/carousel2.webp') }}" alt="Mer turquoise vue des rochers"></div>

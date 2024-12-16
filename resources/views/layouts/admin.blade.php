@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>@yield('title')</title>
+        <title>@yield('Accueil')</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -38,7 +38,10 @@
                 </a>
             </div>
             @include('layouts.navigations.admin_navigation')
-            <button id="dark-mode">Dark Mode</button>
+            <div class="toggle-container">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle" class="toggle"></label>
+            </div>
         </header>
 
         <main>
