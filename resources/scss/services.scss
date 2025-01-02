@@ -1,0 +1,43 @@
+.services-container {
+    padding: 0 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.services-container .card {
+    width: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-container .card .content {
+    margin-bottom: 25px;
+}
+
+.services-container .card .content h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    height: 100px;
+}
+
+.services-container .card .content p {
+    color: black;
+    justify-content: center;
+}
+
+.services-container .card .cta {
+    background-color: var(--main-color);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.services-container .card .cta:hover {
+    background-color: var(--secondary-color);
+}

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     const toggleInput = document.getElementById("dark-mode-toggle");
     const body = document.querySelector('body');
     const elementsToToggle = [

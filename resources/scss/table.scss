@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+table a {
+    color: blue;
+}
+
+thead {
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: left;
+}
+
+thead tr td {
+    padding: 10px;
+    font-weight: bold;
+}
+
+tbody tr td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr td.price {
+    width: 60px;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}

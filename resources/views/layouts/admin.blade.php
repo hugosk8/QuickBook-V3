@@ -27,7 +27,7 @@
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         
         <!-- Scripts -->
-        @vite(['resources/css/common.css', 'resources/js/app.js', 'resources/js/slick-carousel.js', 'resources/js/burger-menu.js', 'resources/js/dark-mode.js'])
+        @vite(['resources/css/global.css', 'resources/js/app.js', 'resources/js/slick-carousel.js', 'resources/js/burger-menu.js', 'resources/js/dark-mode.js'])
     </head>
     <body>
 
@@ -38,10 +38,12 @@
                 </a>
             </div>
             @include('layouts.navigations.admin_navigation')
+
             <div class="toggle-container">
                 <input type="checkbox" id="dark-mode-toggle">
                 <label for="dark-mode-toggle" class="toggle"></label>
             </div>
+            
         </header>
 
         <main>

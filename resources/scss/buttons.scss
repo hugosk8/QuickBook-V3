@@ -1,0 +1,104 @@
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    color: white;
+    background-color: #3d24e4;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #6553de;
+}
+
+.appointments .card button {
+    width: fit-content;
+}
+
+section.head .input button {
+    width: 15%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: darkred;
+}
+
+.btn-modify {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-modify:hover {
+    background-color: darkorange;
+}
+
+form .btn {
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    padding: 7px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+form .btn:hover {
+    background-color: #5d8a55;
+}
+
+form#appointment_data .btn {
+    width: fit-content;
+    padding: 8px 18px;
+}
+
+.btn-confirm {
+    background-color: red;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: gray;
+    color: white;
+}
+
+.btn-confirm:hover{
+    background-color: rgb(150, 39, 39);
+}
+
+.btn-cancel:hover{
+    background-color: rgb(165, 165, 165);
+}
