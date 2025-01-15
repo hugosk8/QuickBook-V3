@@ -38,7 +38,7 @@
             <!-- Sélection de la date -->
             <div class="date">
                 <label for="appointment_date">Choisir une date et une heure :</label>
-                <input type="text" style="display: none" id="appointment_date" name="appointment_date">
+                <input type="date" id="appointment_date" name="appointment_date">
             </div>
     
             <button class="btn" type="submit">Réserver</button>

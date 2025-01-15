@@ -17,12 +17,14 @@ class GuestController extends Controller
     }
 
     public function prestations() {
-        $services = Service::all();
+        $services = Service::Paginate(6);
         return view('pages/services', compact('services'));
     }
 
     public function reservation() {
-        $services = Service::all();
-        return view('pages/reservation', compact('services'));
+        $services = Service::Paginate(6);
+        return request()->ajax()
+        ? response()->json(view('partials.services', compact('services'))->render())
+        : view('pages/reservation', compact('services'));
     }
 }

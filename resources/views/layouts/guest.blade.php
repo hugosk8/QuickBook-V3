@@ -41,7 +41,7 @@
             <div class="toggle-container">
                 <input type="checkbox" id="dark-mode-toggle">
                 <label for="dark-mode-toggle" class="toggle"></label>
-            </div>a
+            </div>
         </header>
 
         <main>

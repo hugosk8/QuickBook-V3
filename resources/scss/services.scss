@@ -41,3 +41,8 @@
 .services-container .card .cta:hover {
     background-color: var(--secondary-color);
 }
+
+span.relative.z-0.inline-flex.rtl\:flex-row-reverse.shadow-sm.rounded-md svg {
+    width: 30px;
+    fill: green;
+}
