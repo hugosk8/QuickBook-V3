@@ -14,6 +14,7 @@ Route::group([], function () {
     Route::get('/', [GuestController::class, 'index'])->name('home');
     Route::get('/contact', [GuestController::class, 'contact'])->name('contact');
     Route::get('/prestations', [GuestController::class, 'prestations'])->name('prestations');
+    Route::get('/search-service', [ServiceController::class, 'search'])->name('search.service');
 });
 
 // For connected users

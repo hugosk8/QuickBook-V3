@@ -468,6 +468,10 @@ section.presentation .title {
   text-align: center;
 }
 
+.search-section ul#search-results li {
+  margin-top: 10px;
+}
+
 section.presentation h2 {
   font-size: 36px;
   color: var(--main-color);

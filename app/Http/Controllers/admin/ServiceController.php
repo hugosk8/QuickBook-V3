@@ -70,4 +70,14 @@ class ServiceController extends Controller
         $services = Service::all();
         return view('pages.admin.services.list', compact('services'));
     }
+
+    public function search(Request $request) {
+        $query = $request->input('query');
+
+        $services = Service::where('name', 'like', "%$query%")
+            ->orWhere('description', 'like', "%$query%")
+            ->get();
+
+        return response()->json($services);
+    }
 }
